@@ -41,6 +41,9 @@ class LocationController extends Controller
     public function addLocation(Request $request)
     {
         $data = [
+            'nama_wisata' => $request->json('nama_wisata'),
+            'alamat' => $request->json('alamat'),
+            'gambar' => $request->json('gambar'),
             'coordinates' => $request->json('coordinates')
         ];
 
